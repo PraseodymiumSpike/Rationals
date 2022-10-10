@@ -143,8 +143,8 @@ function new_rational(numerator,denominator)
  if denominator==0 then
   error("attempt to create rational with denominator 0")
  end
- reduced_numerator=1
- reduced_denominator=1
+ local reduced_numerator=1
+ local reduced_denominator=1
  if numerator==0 then
   reduced_numerator=0
   reduced_denominator=1
