@@ -170,7 +170,7 @@ function new_rational(numerator,denominator)
  rational_metatable.__div=internal_divide_rationals
  rational_metatable.__pow=internal_exponentiate_rationals
  rational_metatable.__unm=internal_negate_rational
- rational_metatable.__idiv=internal_floor_divide_rational
+ rational_metatable.__idiv=internal_floor_divide_rationals
  rational_metatable.__len=internal_length_of_rational
  rational_metatable.__eq=internal_rationals_are_equal
  rational_metatable.__lt=internal_left_hand_rational_is_less_than_right_hand_rational
