@@ -99,7 +99,7 @@ function floor_of_rational(rational)
    local minus_rational=-rational
    return -(internal_floor_division(minus_rational.numerator,minus_rational.denominator)+1)
   else
-   return rational.denominator
+   return rational.numerator
   end
  elseif rational.numerator==0 then
   return new_rational(0,1)
