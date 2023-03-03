@@ -95,8 +95,12 @@ end
 function floor_of_rational(rational)
  --returns an integer
  if rational.numerator<0 then
-  local minus_rational=-rational
-  return -(internal_floor_division(minus_rational.numerator,minus_rational.denominator)+1)
+  if rational.denominator~=1 then
+   local minus_rational=-rational
+   return -(internal_floor_division(minus_rational.numerator,minus_rational.denominator)+1)
+  else
+   return rational.denominator
+  end
  elseif rational.numerator==0 then
   return new_rational(0,1)
  else
